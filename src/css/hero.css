@@ -1,14 +1,23 @@
 .hero {
-    height: 100vh;
     width: 100%;
-    position: absolute;
+    height: 100vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     z-index: -10;
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05)), url(../images/soop-kim.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     display: flex;
     align-items: center;
     color: white;
