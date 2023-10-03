@@ -2,15 +2,40 @@ nav {
     position: sticky;
     top: 0;
     padding: 1rem;
+    backdrop-filter: blur(10px);
+    color: var(--white-color);
+}
+
+.nav-input {
+    width: 100%;
+    padding: .25rem;
+    background-color: rgba(255, 255, 255, .75);
+    color: var(--light-color);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0 var(--space-l-xl);
+    padding-left: 1rem;
+}
+
+nav input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
 
 nav ul {
+    width: max-content;
     padding: 0;
     list-style: none;
     display: flex;
@@ -18,7 +43,6 @@ nav ul {
 }
 
 header {
-    margin-right: auto;
     align-items: center;
 }
 
@@ -26,7 +50,25 @@ nav a {
     text-decoration: none;
     color: inherit;
     font-size: var(--step-0);
+    position: relative;
+}
 
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-list a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 header h1 {
@@ -34,10 +76,13 @@ header h1 {
     margin: 0;
 }
 
-.nav-button {
+nav button {
     background-color: transparent;
     border: none;
     color: inherit;
+}
+
+.nav-button {
     padding: 0 var(--space-xs);
 }
 
