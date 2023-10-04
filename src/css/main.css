@@ -6,6 +6,10 @@ main h2 {
     font-size: var(--step-0);
 }
 
+.slider {
+    margin-bottom: 1rem;
+}
+
 .horizontal-slide {
     list-style: none;
     overflow: auto;
@@ -14,18 +18,26 @@ main h2 {
     flex-direction: row;
     margin: 0;
     padding: 0;
+    gap: 1rem;
 }
 
 .card {
-    margin: 1rem;
-    background-color: antiquewhite;
     width: 15rem;
-    padding: 1rem;
 }
 
-.card-image {}
+.card-image {
+    width: 100%;
+    height: 20rem;
+
+}
 
 .card-image>img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 0 1rem;
+    padding-bottom: 1rem;
 }
