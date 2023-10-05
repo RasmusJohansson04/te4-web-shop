@@ -41,3 +41,43 @@ main h2 {
     padding: 0 1rem;
     padding-bottom: 1rem;
 }
+
+.section {
+    padding: 3rem 0;
+}
+
+.section:nth-child(odd) {}
+
+.section:nth-child(even) {
+    background-color: var(--darker-white-color);
+}
+
+.split {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.split-image {
+    width: 50%;
+    height: 30rem;
+}
+
+.split-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.split-text {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.split-text button {
+    border: 1px solid var(--link-color);
+    padding: 1rem;
+    background-color: transparent;
+    font-size: var(--step--1);
+}

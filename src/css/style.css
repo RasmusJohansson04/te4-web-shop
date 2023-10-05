@@ -5,9 +5,10 @@
     --background-color: #151515;
     --dark-color: #252525;
     --light-color: #353535;
-    --accent-color: #e2b31b;
+    --accent-color: #c95245;
     --link-color: #235fe0;
     --white-color: #fafafa;
+    --darker-white-color: #f2f2f2;
     --space-xs: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
     --space-s: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
     --space-m: clamp(1.5rem, 1.38rem + 0.58vw, 1.875rem);
