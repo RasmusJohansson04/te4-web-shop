@@ -3,9 +3,16 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(10px);
     color: var(--white-color);
     z-index: 10;
+}
+
+.nav-blur {
+    backdrop-filter: blur(10px);
+}
+
+.nav-colored {
+    background-color: var(--background-color);
 }
 
 .nav-input {
@@ -94,9 +101,7 @@ nav button {
     color: inherit;
 }
 
-.nav-button {
-    padding: 0 var(--space-xs);
-}
+.nav-button {}
 
 @media (min-width: 800px) {
     #mobile {

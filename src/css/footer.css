@@ -16,6 +16,10 @@ footer img {
     height: auto;
 }
 
+footer h2 {
+    font-size: var(--step-2);
+}
+
 @media (min-width: 800px) {
     footer ul {
         flex-direction: row;
