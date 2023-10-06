@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     height: 100vh;
+    max-height: 1200px;
 }
 
 .hero-img {

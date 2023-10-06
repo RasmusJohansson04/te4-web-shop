@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outsite</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/fixed-nav.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/products.css">
 </head>
 
 <body>
     {% include "navbar.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
+    <script src="/js/scroll.js"></script>
 </body>
 
 </html>

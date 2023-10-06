@@ -1,29 +1,22 @@
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     color: var(--white-color);
+    background-color: var(--background-color);
     z-index: 10;
 }
 
-.nav-blur {
-    backdrop-filter: blur(10px);
-}
-
-.nav-colored {
-    background-color: var(--background-color);
-}
-
 .nav-input {
-    width: 100%;
+    min-width: min-content;
+    width: 30%;
     padding: .25rem;
     background-color: rgba(255, 255, 255, .75);
     color: var(--light-color);
     border-radius: 2rem;
     display: flex;
     align-items: center;
-    margin: 0 var(--space-l-xl);
     padding-left: 1rem;
 }
 
@@ -37,6 +30,7 @@ nav input {
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     padding: .5rem 1rem;
