@@ -54,8 +54,8 @@ header {
 }
 
 header img {
-    width: 10rem;
-    height: auto;
+    width: auto;
+    height: 2rem;
 }
 
 nav a {
@@ -99,12 +99,28 @@ nav button {
 }
 
 @media (min-width: 800px) {
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
     .nav-button {
         display: none;
     }
 }
 
 @media (max-width: 799px) {
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+
     .nav-collapse {
         display: none;
     }
