@@ -26,7 +26,7 @@ main h2 {
 }
 
 .card {
-    width: 15rem;
+    width: var(--card-width);
 }
 
 .card-image {
