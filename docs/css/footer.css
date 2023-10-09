@@ -11,6 +11,10 @@ footer ul {
     gap: 1rem;
 }
 
+footer li {
+    width: 33%;
+}
+
 footer img {
     padding: 1rem 0;
     max-width: 10rem;
@@ -30,5 +34,9 @@ footer h2 {
 @media (max-width: 799px) {
     footer ul {
         flex-direction: column;
+    }
+
+    footer li {
+        width: 100%;
     }
 }
