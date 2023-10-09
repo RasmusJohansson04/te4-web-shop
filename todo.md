@@ -1,7 +1,7 @@
 # Todo
 
-## Fixa footer
+ - Fixa footer
 
-## Nedskalade bilder
+ - Nedskalade bilder
 
-## Fler placeholder bilder
+ - Fler placeholder bilder
